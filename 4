@@ -1,0 +1,16 @@
+a = input()
+al = 'уеаояиюУЕАОЯИЮ'
+
+def brick_lang(string):
+    a = ''
+    for i in range(len(string)):
+        if string[i] in al:
+            a += string[i]
+            a += 'к'
+            a += string[i]
+        else:
+            a += string[i]
+
+    return a
+
+print(brick_lang(a))
