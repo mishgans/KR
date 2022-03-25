@@ -1,0 +1,11 @@
+a = int(input())
+
+def summarize(number):
+    while len(str(number)) > 1:
+        b = 0
+        for i in range(len(str(number))):
+            b += int(str(number)[i])
+        number = b
+    return number
+
+print(summarize(a))
